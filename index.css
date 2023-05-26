@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Outfit:wght@300;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  font-family: "Roboto",sans-serif;
+}
+main{
+  display: flex;
+  flex-direction: column-reverse;
+}
+img{
+  max-width: 100%;
+}
+main h1{
+  color:hsl(234, 29%, 20%);
+  margin-bottom: 2rem;
+}
+main article .poster{
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  
+}
+form input{
+  font-family: inherit;
+  font-size: 1rem;
+  padding-left:3.7rem ;
+  padding-right: 3.7rem;
+  padding-top:0.5rem ;
+  padding-bottom:0.5rem ;
+  border:1px solid black;
+  border-radius: 7px;
+ /* margin-top:1rem ;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;*/
+  color: hsl(235, 18%, 26%);
+  width:100%;
+}
+form input::placeholder{
+  color:hsl(235, 18%, 26%);
+}
+.error{
+  font-family: inherit;
+  font-size: 1rem;
+  color:hsl(4, 100%, 67%);
+  margin-left:17rem;
+  display:none;
+}
+main article form button{
+  font-family: inherit;
+  border:none;
+  border-radius: 7px;
+  color:white;
+  background-color:hsl(234, 29%, 20%) ;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top:15px ;
+  padding-bottom: 15px;
+
+}
+@media(min-width:768px){
+  main{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main article{
+    flex:1;
+  }
+  form input{
+    width: 400px;
+  }
+  form button{
+    width:400px;
+    margin-left: 1.5rem;
+  }
+  main h1{
+    margin-left:1.5rem;
+    margin-bottom: 4rem;
+  }
+  main p{
+    margin-left: 1.5rem;
+  }
+  .property{
+    width:350px;
+    margin-top: 2em;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .emailbox{
+    width:450px;
+    margin-top: 2em;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+}
